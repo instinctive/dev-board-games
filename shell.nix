@@ -33,6 +33,7 @@ myHaskellPackages.shellFor {
 
   buildInputs = [
     pkgs.cabal-install
+    pkgs.dhall
     pkgs.ghcid
     # myHaskellPackages.haskell-language-server
   ];
