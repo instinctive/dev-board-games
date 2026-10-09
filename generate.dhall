@@ -65,6 +65,6 @@ let package
     : Text -> List Text -> Text
     = \(name : Text) ->
       \(components : List Text) ->
-        "cabal-version: 3.0\nname: ${name}\nversion: 0.1.0.0\n${sharedStanza}${List/fold Text components Text (\(c : Text) -> \(acc : Text) -> "${c}${acc}") ""}"
+        "cabal-version: 3.0\nname: ${name}\nversion: 0.1.0.0\n-- This file is generated from ${name}.dhall. Do not edit manually.\n${sharedStanza}${List/fold Text components Text (\(c : Text) -> \(acc : Text) -> "${c}${acc}") ""}"
 
 in  { package, library, executable, testSuite }

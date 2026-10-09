@@ -1,6 +1,7 @@
 cabal-version: 3.0
 name: games-app
 version: 0.1.0.0
+-- This file is generated from games-app.dhall. Do not edit manually.
 
 common shared -- {{{
   mixins:
