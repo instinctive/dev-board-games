@@ -1,4 +1,4 @@
-module TTTImpl where
+module Game.TicTacToe where
 
 import Data.Array
 import Data.List.Split (chunksOf)

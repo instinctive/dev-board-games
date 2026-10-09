@@ -1,9 +1,9 @@
 {-# LANGUAGE TypeFamilies #-}
 
-module TTTGame (initGame) where
+module Game.TicTacToe.Instance (initGame) where
 
-import Core.Game
-import qualified TTTImpl as Impl
+import Game.Core.Game
+import qualified Game.TicTacToe as Impl
 
 newtype TTTGame = TTTGame { unWrap :: Impl.Turn }
 

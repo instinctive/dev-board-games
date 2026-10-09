@@ -1,5 +1,5 @@
 cabal-version: 3.0
-name: core
+name: tictactoe-game
 version: 0.1.0.0
 
 common shared -- {{{
@@ -16,24 +16,12 @@ common shared -- {{{
     , MultiWayIf
     , RecordWildCards
     , ViewPatterns
-  build-depends:
-    , array
-    , random
-    , split
-    -- , MonadRandom
-    -- , atomic-css
-    -- , bytestring
-    -- , cassava
-    -- , containers
-    -- , formatting
-    -- , hyperbole
-    -- , lens
-    -- , mtl
-    -- , random-shuffle
-    -- , text
-    -- , vector
 -- }}}
 
 library
   import: shared
-  exposed-modules: Core.Game, Core.Robot
+  hs-source-dirs: src
+  exposed-modules: Game.TicTacToe.Instance
+  build-depends:
+    , game-class
+    , tictactoe

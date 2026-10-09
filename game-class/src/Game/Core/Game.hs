@@ -1,6 +1,6 @@
 {-# LANGUAGE TypeFamilies #-}
 
-module Core.Game
+module Game.Core.Game
     ( Game, Move, Result, Step
     , nextMoves, parseMove, showMove, showStep
     ) where

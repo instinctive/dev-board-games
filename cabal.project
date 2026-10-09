@@ -1,4 +1,6 @@
 packages:
-  ./core
-  ./ttt
-
+  ./game-class
+  ./game-robot
+  ./tictactoe
+  ./tictactoe-game
+  ./games-app

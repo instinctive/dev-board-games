@@ -1,10 +1,10 @@
-module Core.Robot
+module Game.Core.Robot
     ( Robot, mkHuman, mkRandom, play
     ) where
 
 import System.Random
 
-import Core.Game
+import Game.Core.Game
 
 data Robot g = Robot
     { name   :: String

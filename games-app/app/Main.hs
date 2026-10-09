@@ -1,7 +1,7 @@
 module Main where
 
-import Core.Robot
-import TTTGame
+import Game.Core.Robot
+import Game.TicTacToe.Instance
 
 main = do
     args <- getArgs
@@ -21,4 +21,3 @@ mkRobot name
   where
     prefix = takeWhile (/='/') name
     suffix = dropWhile (/='/') name
-
